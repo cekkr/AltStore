@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		0E33F94B8D78AB969FD309A3 /* Pods_AltStoreCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A08F67C18350C7990753F03F /* Pods_AltStoreCore.framework */; };
 		2A77E3D272F3D92436FAC272 /* Pods_AltStore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9EEAA842DA87A88A870053B /* Pods_AltStore.framework */; };
+		8B2B7A732BF4793500438F6D /* Roxas.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B2B7A722BF4793500438F6D /* Roxas.framework */; };
+		8B2B7A742BF4793500438F6D /* Roxas.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8B2B7A722BF4793500438F6D /* Roxas.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8B2B7A762BF479D400438F6D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B2B7A702BF478F200438F6D /* UIKit.framework */; };
+		8B2B7A772BF479D400438F6D /* UIKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8B2B7A702BF478F200438F6D /* UIKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A8BCEBEAC0620CF80A2FD26D /* Pods_AltServer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC3822AB1C4CF1D4CDF7445D /* Pods_AltServer.framework */; };
 		BF02419622F2199300129732 /* RefreshAttemptsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF02419522F2199300129732 /* RefreshAttemptsViewController.swift */; };
 		BF0241AA22F29CCD00129732 /* UserDefaults+AltServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF0241A922F29CCD00129732 /* UserDefaults+AltServer.swift */; };
@@ -196,7 +200,7 @@
 		BF8F69C422E662D300049BA1 /* AppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8F69C322E662D300049BA1 /* AppViewController.swift */; };
 		BF904DEA265DAE9A00E86C2A /* InstalledApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF904DE9265DAE9A00E86C2A /* InstalledApp.swift */; };
 		BF989171250AABF4002ACF50 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF989170250AABF4002ACF50 /* Assets.xcassets */; };
-		BF989177250AABF4002ACF50 /* AltWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = BF989167250AABF3002ACF50 /* AltWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		BF989177250AABF4002ACF50 /* AltWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = BF989167250AABF3002ACF50 /* AltWidgetExtension.appex */; platformFilter = ios; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		BF98917E250AAC4F002ACF50 /* Countdown.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF98917C250AAC4F002ACF50 /* Countdown.swift */; };
 		BF98917F250AAC4F002ACF50 /* LockScreenWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF98917D250AAC4F002ACF50 /* LockScreenWidget.swift */; };
 		BF989184250AACFC002ACF50 /* Date+RelativeDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFDB5B1522EE90D300F74113 /* Date+RelativeDate.swift */; };
@@ -535,6 +539,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		8B2B7A752BF4793500438F6D /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				8B2B7A742BF4793500438F6D /* Roxas.framework in Embed Frameworks */,
+				8B2B7A772BF479D400438F6D /* UIKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BF0201BC22C2EFA3000B93E4 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -637,6 +653,8 @@
 /* Begin PBXFileReference section */
 		11611D46F8A7C8B928E8156B /* Pods-AltServer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AltServer.debug.xcconfig"; path = "Target Support Files/Pods-AltServer/Pods-AltServer.debug.xcconfig"; sourceTree = "<group>"; };
 		589BA531D903B28F292063E5 /* Pods-AltServer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AltServer.release.xcconfig"; path = "Target Support Files/Pods-AltServer/Pods-AltServer.release.xcconfig"; sourceTree = "<group>"; };
+		8B2B7A702BF478F200438F6D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/System/iOSSupport/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		8B2B7A722BF4793500438F6D /* Roxas.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Roxas.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A08F67C18350C7990753F03F /* Pods_AltStoreCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AltStoreCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A136EE677716B80768E9F0A2 /* Pods-AltStore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AltStore.release.xcconfig"; path = "Target Support Files/Pods-AltStore/Pods-AltStore.release.xcconfig"; sourceTree = "<group>"; };
 		B39BC452F0753C2C33A2D43B /* Pods-AltStoreCore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AltStoreCore.debug.xcconfig"; path = "Target Support Files/Pods-AltStoreCore/Pods-AltStoreCore.debug.xcconfig"; sourceTree = "<group>"; };
@@ -1160,9 +1178,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B2B7A732BF4793500438F6D /* Roxas.framework in Frameworks */,
 				BF42345D25102688006D1EB2 /* OpenSSL.xcframework in Frameworks */,
 				BF42345C251024B0006D1EB2 /* AltSign-Static in Frameworks */,
 				0E33F94B8D78AB969FD309A3 /* Pods_AltStoreCore.framework in Frameworks */,
+				8B2B7A762BF479D400438F6D /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1903,6 +1923,8 @@
 		BFD247852284BB3300981D42 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8B2B7A722BF4793500438F6D /* Roxas.framework */,
+				8B2B7A702BF478F200438F6D /* UIKit.framework */,
 				D537C85A2AA95066009A1E08 /* libcorecrypto.tbd */,
 				D533E8B62727841800A9B5DD /* libAppleArchive.tbd */,
 				BF088D322501A4FF008082D9 /* OpenSSL.xcframework */,
@@ -2530,6 +2552,7 @@
 				BF66EE7A2501AE50007EE018 /* Sources */,
 				BF66EE7B2501AE50007EE018 /* Frameworks */,
 				BF66EE7C2501AE50007EE018 /* Resources */,
+				8B2B7A752BF4793500438F6D /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -3412,6 +3435,7 @@
 		};
 		BF989176250AABF4002ACF50 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
+			platformFilter = ios;
 			target = BF989166250AABF3002ACF50 /* AltWidgetExtension */;
 			targetProxy = BF989175250AABF4002ACF50 /* PBXContainerItemProxy */;
 		};
@@ -3568,7 +3592,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 84;
 				DEAD_CODE_STRIPPING = YES;
-				DEVELOPMENT_TEAM = 6XVY5G3U44;
+				DEVELOPMENT_TEAM = UYSXKZ8U4Z;
 				ENABLE_HARDENED_RUNTIME = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -3593,6 +3617,7 @@
 					"\"$(SRCROOT)/Dependencies/AltSign/Dependencies/ldid/libplist/libcnary/include\"",
 					"\"${SDKROOT}/usr/include/libxml2\"",
 					"\"$(SRCROOT)/Dependencies/AltSign/Dependencies/libzip/xcode\"",
+					"/opt/homebrew/Cellar/openssl@3/3.3.0/include",
 				);
 				INFOPLIST_FILE = AltServer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -3600,7 +3625,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MARKETING_VERSION = 1.7.2b;
-				PRODUCT_BUNDLE_IDENTIFIER = com.rileytestut.AltServer;
+				PRODUCT_BUNDLE_IDENTIFIER = ink.geckos.AltServer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				SWIFT_OBJC_BRIDGING_HEADER = "AltServer/AltServer-Bridging-Header.h";
@@ -3621,7 +3646,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 84;
 				DEAD_CODE_STRIPPING = YES;
-				DEVELOPMENT_TEAM = 6XVY5G3U44;
+				DEVELOPMENT_TEAM = UYSXKZ8U4Z;
 				ENABLE_HARDENED_RUNTIME = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -3646,6 +3671,7 @@
 					"\"$(SRCROOT)/Dependencies/AltSign/Dependencies/ldid/libplist/libcnary/include\"",
 					"\"${SDKROOT}/usr/include/libxml2\"",
 					"\"$(SRCROOT)/Dependencies/AltSign/Dependencies/libzip/xcode\"",
+					"/opt/homebrew/Cellar/openssl@3/3.3.0/include",
 				);
 				INFOPLIST_FILE = AltServer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -3653,7 +3679,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MARKETING_VERSION = 1.7.2b;
-				PRODUCT_BUNDLE_IDENTIFIER = com.rileytestut.AltServer;
+				PRODUCT_BUNDLE_IDENTIFIER = ink.geckos.AltServer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				SWIFT_OBJC_BRIDGING_HEADER = "AltServer/AltServer-Bridging-Header.h";
@@ -3862,6 +3888,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.rileytestut.AltStoreCore;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -3893,6 +3922,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.rileytestut.AltStoreCore;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -3914,7 +3946,7 @@
 				CURRENT_PROJECT_VERSION = 31;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEVELOPMENT_ASSET_PATHS = AltWidget/Previews.xcassets;
-				DEVELOPMENT_TEAM = 6XVY5G3U44;
+				DEVELOPMENT_TEAM = UYSXKZ8U4Z;
 				INFOPLIST_FILE = AltWidget/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -3922,7 +3954,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 2.0b7;
-				PRODUCT_BUNDLE_IDENTIFIER = com.rileytestut.AltStore.AltWidget;
+				PRODUCT_BUNDLE_IDENTIFIER = ink.geckos.AltStore.AltWidget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$inherited WIDGET_EXTENSION";
@@ -3945,7 +3977,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 31;
 				DEVELOPMENT_ASSET_PATHS = AltWidget/Previews.xcassets;
-				DEVELOPMENT_TEAM = 6XVY5G3U44;
+				DEVELOPMENT_TEAM = UYSXKZ8U4Z;
 				INFOPLIST_FILE = AltWidget/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -3953,7 +3985,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 2.0b7;
-				PRODUCT_BUNDLE_IDENTIFIER = com.rileytestut.AltStore.AltWidget;
+				PRODUCT_BUNDLE_IDENTIFIER = ink.geckos.AltStore.AltWidget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$inherited WIDGET_EXTENSION";
@@ -4104,7 +4136,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 31;
-				DEVELOPMENT_TEAM = 6XVY5G3U44;
+				DEVELOPMENT_TEAM = UYSXKZ8U4Z;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = AltStore/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -4117,13 +4149,16 @@
 					"$(PROJECT_DIR)/Dependencies/libcurl",
 				);
 				MARKETING_VERSION = 2.0rc;
-				PRODUCT_BUNDLE_IDENTIFIER = com.rileytestut.AltStore;
+				PRODUCT_BUNDLE_IDENTIFIER = ink.geckos.AltStore;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_OBJC_BRIDGING_HEADER = "AltStore/AltStore-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -4139,7 +4174,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 31;
-				DEVELOPMENT_TEAM = 6XVY5G3U44;
+				DEVELOPMENT_TEAM = UYSXKZ8U4Z;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = AltStore/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -4152,12 +4187,15 @@
 					"$(PROJECT_DIR)/Dependencies/libcurl",
 				);
 				MARKETING_VERSION = 2.0rc;
-				PRODUCT_BUNDLE_IDENTIFIER = com.rileytestut.AltStore;
+				PRODUCT_BUNDLE_IDENTIFIER = ink.geckos.AltStore;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_OBJC_BRIDGING_HEADER = "AltStore/AltStore-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
